@@ -53,18 +53,17 @@ export  default function Calculator() {
     };
     // Calculate area
     const Calculate = () =>{
-        operator.e.target.textContent ='X'.toUpperCase();
         if (operator ==="/"){
-            setNum(parseFloat(numReserv) / parseFloat(num));
+            setNum(numReserv / num);
         };
-        if (operator ==="x"){
-            setNum(parseFloat(numReserv) * parseFloat(num));
+        if (operator ==="x" || operator ==="X"){
+            setNum(numReserv * num);
         };
         if (operator ==="+"){
             setNum(parseFloat(numReserv) + parseFloat(num));
         };
         if (operator ==="-"){
-            setNum(parseFloat(numReserv) - parseFloat(num));
+            setNum(numReserv - num);
         };
     }
  
@@ -106,7 +105,7 @@ export  default function Calculator() {
                 <button onClick={inputNumber} className="btnNum">3</button>
                 <button onClick={Operator} className="btnOrange">+</button>
                 <button onClick={inputNumber} className="btnNum" id='btn0'>0</button>
-                <button  className="btnNum">,</button>
+                <button className="btnNum">,</button>
                 <button onClick={Calculate} className="btnOrange">=</button>
             </div> 
 
