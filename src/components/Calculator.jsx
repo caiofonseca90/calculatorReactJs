@@ -55,16 +55,16 @@ export  default function Calculator() {
     const Calculate = () =>{
         operator.e.target.textContent ='X'.toUpperCase();
         if (operator ==="/"){
-            setNum(numReserv / num);
+            setNum(parseFloat(numReserv) / parseFloat(num));
         };
         if (operator ==="x"){
-            setNum(numReserv * num);
+            setNum(parseFloat(numReserv) * parseFloat(num));
         };
         if (operator ==="+"){
             setNum(parseFloat(numReserv) + parseFloat(num));
         };
         if (operator ==="-"){
-            setNum(numReserv - num);
+            setNum(parseFloat(numReserv) - parseFloat(num));
         };
     }
  

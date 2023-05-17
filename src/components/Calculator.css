@@ -158,13 +158,11 @@ button:active{
         width: 4.5rem;
         border-radius: 10rem;
         border: none;
-        transition:  .1s ease-in-out;
         font-size: 1.5rem;
     }
     button:active{
         transform: scale(0.90);
         box-shadow: 0 0 4px 1px #444;
-        transition:  .1s ease-in-out;
     }
     .btnOrange{
         background-color: orange;
@@ -174,10 +172,7 @@ button:active{
         background-color: #444;
         color: #fff;    
     }
-    #btn0{
-        grid-column: span 2;
-        width: 100%;
-    }
+  
 }
 @media only screen and (max-width: 380px) {
     button{
@@ -185,7 +180,6 @@ button:active{
         width: 4rem;
         border-radius: 10rem;
         border: none;
-        transition:  .1s ease-in-out;
         font-size: 1.5rem;
     }
 }
