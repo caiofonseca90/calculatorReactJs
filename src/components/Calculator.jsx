@@ -53,10 +53,11 @@ export  default function Calculator() {
     };
     // Calculate area
     const Calculate = () =>{
+        operator.e.target.textContent ='X'.toUpperCase();
         if (operator ==="/"){
             setNum(numReserv / num);
         };
-        if (operator ==="X"){
+        if (operator ==="x"){
             setNum(numReserv * num);
         };
         if (operator ==="+"){

@@ -174,7 +174,7 @@ button:active{
         background-color: #444;
         color: #fff;    
     }
-    .btn0{
+    #btn0{
         grid-column: span 2;
         width: 100%;
     }
